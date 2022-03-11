@@ -1,6 +1,8 @@
+
 from distutils.log import debug
 from flask import Flask, render_template
 from webapp.text_test import *
+from webapp.timer import *
 #from webapp.text_test import text_sostavv, text_azbuc_rr, text_azbucc, inf_rubik_assamble2, inf_rubik_assamble, text2, text
 def create_app():
     app = Flask(__name__)
@@ -17,7 +19,7 @@ def create_app():
         title = 'kubingor.com2'
         greetr = text2
         inf_rubik_assamble = inf_rubik_assamble2
-        return render_template('index2.html', page_title=title, greetir=greetr, inf_rubik_assamble=inf_rubik_assamble)
+        return render_template('index2.html', page_title=title, greetir=greetr, inf_rubik_assamble=inf_rubik_assamble, time=sekund)
 
     @app.route('/index3')
     def index3 ():

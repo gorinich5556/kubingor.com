@@ -14,13 +14,46 @@
     <title>Страница 2</title>
   </head>
   <body>
-    <h4>{{ inf_rubik_assamble }}</h4>
-    <div class = 'col-1'>
-        <div class = 'text-white'>
-            <h5><a href ="/"> Назад </a></h5>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="#">
+        <img src="{{ url_for("static", filename="logotip.png") }}"  class="img-fluid" width="50" alt="Responsive image">
+      </a>
+      <a class="navbar-brand" href="#">kubingor.com</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="/index2"><h5>таймер</h5> <span class="sr-only"></span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/"><h5>Главная</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/"><h5>о чем сайт?</h5></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index3"><h5>Как собирать кубик</h5></a>
+          </li>
         </div>
+    
+    </nav>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+          </div>
+          <div class="col-4">
+            <h1>{{ sekund }}</h1>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+
     </div>
-    <img src="/static/test.png" width="200">
 
 
     <!-- Optional JavaScript; choose one of the two! -->
